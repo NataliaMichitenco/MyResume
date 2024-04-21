@@ -1,0 +1,37 @@
+{
+    "buttons": {
+        "language": "Switch lang",
+        "AboutMe": "About me",
+        "Portfolio": "Portfolio",
+        "Contact": "Contact"
+    },
+    "title": {
+        "h3": "Hello",
+        "h2": "I’m Natalia Michitenco",
+        "text": "I have been actively involved in frontend development for the last year and I am ready to create modern and stylish websites that will attract users with their unique design and usability. Let's collaborate to bring your vision to life and create something truly amazing!",
+        "btnContent": "Contact me"
+    },
+    "about": {
+        "h2": "About Me",
+        "text": "An enthusiastic and detail-oriented Junior Frontend Developer with proficient knowledge in HTML and CSS. Seeking to utilize my technical skills and expertise to provide value to the employer and contribute to successful projects both today and in the future. Aiming to take on new challenges and utilize my coding and debugging skills for developing new features and enhance the overall user experience. But also I like to meet new people and possibility to work with people from different countries and cultures attracts me. I really loved learning programming and I'm looking forward to start applying my knowledge and motivated to show my best."
+    },
+
+    "sliderTitle": "Portfolio",
+    "footerTitle": "For contact:",
+    "number": "Number",
+    "skill": "My skills",
+    "skills": [
+        {
+        "text": "HTML",
+        "about": "Semantic, cross-browser, adaptive layout"
+        },
+        {
+        "text": "CSS",
+        "about": "Flexbox, Grid, animation"
+        },
+        {
+            "text": "JavaScript",
+            "about": " Fundamentals, algorithms and data structures, JS API browser'"
+        }
+    ]
+}
