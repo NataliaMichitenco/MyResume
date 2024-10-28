@@ -92,6 +92,15 @@ main {
     }
 
 }
+@media (max-width: 768px) {
+    .main {
+        &__left-content{
+    &_btn {
+        margin-left: 50%;
+    }
+        }
+    }
+}
 @media (max-width: 480px) {
     .main {
         flex-direction: column-reverse;
