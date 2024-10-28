@@ -77,4 +77,12 @@ padding: 15px;
         height: 35px;
     }
 }
+
+@media (max-width: 480px) {
+    .footer {
+        &__title{
+            display: none;
+        }
+    }
+}
 </style>

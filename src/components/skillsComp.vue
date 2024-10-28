@@ -28,7 +28,7 @@
       {
         img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
         text: 'CSS',
-        about: 'Flexbox, Grid, animation',
+        about: 'SCSS, BEM, animation, Tailwind',
       },
       {
         img: require("../assets/img/js.png"),
@@ -37,15 +37,18 @@
       },
       {
         img: require("../assets/img/vue3.png"),
-        text: 'VUE',
+        text: 'Vue',
+        about: 'Vue.js, Vue CLI, Vuex, Router, i18n',
       },
       {
         img: require("../assets/img/git.png"),
         text: 'GIT',
+        about: 'GitHub'
       },
       {
         img: require("../assets/img/scss.png"),
-        text: 'SCSS',
+        text: 'VScode',
+        about: 'Figma, WordPress'
       },
     ],
   };
@@ -103,8 +106,8 @@ padding-top: 80px;
 
         &_about {
           width: 170px;
-          height: 100px;
           display: flex;
+          justify-content: center;
           text-align: center;
           font-size: 18px;
           font-weight: 500;
@@ -112,4 +115,22 @@ padding-top: 80px;
     }
 }
 
+
+@media (max-width: 480px) {
+  .skills {
+    grid-template-columns: repeat(2, 2fr);
+    gap: 18px;
+    padding: 15px;
+}
+}
+@media (max-width: 415px){
+.section {
+  padding-top: 25px;
+}
+.skills {
+    grid-template-columns: repeat(1, 2fr);
+    gap: 18px;
+    padding: 15px;
+}
+}
 </style>

@@ -85,8 +85,7 @@ section {
         border-radius: 29px;
         display: flex;
         max-width: 970px;
-        height: 500px;
-        padding: 20px;
+        padding: 35px 20px;
         gap: 30px;
         align-items: center;
 
@@ -117,5 +116,28 @@ section {
 
 }
 
+@media (max-width: 480px) {
+  .slider {
+    padding-top: 10px;
+    padding-bottom: 10px;
 
+    &__project {
+
+        max-width: 480px;
+        padding: 15px 5px;
+        gap: 5px;
+        margin: 5px;
+
+        &_foto {
+          max-width: 493px;
+          max-height: 500px;
+        }
+
+        &_description {
+          max-width: 296px;
+          max-height: 436px;
+        }
+    }
+}
+}
 </style>

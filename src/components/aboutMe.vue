@@ -102,4 +102,34 @@ section {
     border: none;
     cursor: pointer;
 }
+
+@media (max-width: 480px){
+  .aboutMe {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    align-items: center;
+    flex-direction: column;
+
+    &__text {
+    font-size: 20px;
+    padding: 20px 10px 5px;
+    }
+}
+.scroll-btn {
+    position: fixed;
+    z-index: 101;
+    bottom: 682px;
+    right: 25px;
+    background: #2A2A2A;
+    width: 40px;
+    border: none;
+    cursor: pointer;
+}
+}
 </style>

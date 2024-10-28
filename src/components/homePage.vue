@@ -45,7 +45,6 @@ main {
         display: flex;
         flex-direction: column;
         max-width: 500px;
-        height: 377px;
         color: #E4E4E4;
         gap: 25px;
         padding: 20px;
@@ -86,12 +85,37 @@ main {
     }
 
     &__right-content {
-        
+
         &_myFoto {
             max-height: 637px;
         }
     }
 
 }
+@media (max-width: 480px) {
+    .main {
+        flex-direction: column-reverse;
 
+
+&__left-content{
+    max-width: 480px;
+    gap: 8px;
+    padding: 10px;
+
+    &_h3 {
+        font-size: 30px;
+    }
+
+    &_h2 {
+        font-size: 48px;
+        line-height: 33.6px;
+        color: #E2A300;
+    }
+
+    &_btn {
+        margin-bottom: 8px;
+    }
+}
+}
+}
 </style>
