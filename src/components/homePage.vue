@@ -30,6 +30,14 @@
 	text-decoration: none;
 
 }
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0 #f9b301f3;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(55, 141, 250, 0);
+  }
+}
 
 main {
     background: #414141;
@@ -81,6 +89,7 @@ main {
             font-weight: 600;
             transform: rotate(-5deg);
             text-align: center;
+            animation: shadow 1s ease infinite;
         }
     }
 

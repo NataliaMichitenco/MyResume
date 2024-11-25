@@ -21,34 +21,24 @@
   return {
     skills: [
       {
-        img: "https://cdn-icons-png.flaticon.com/512/174/174854.png",
-        text: 'HTML',
-        about: 'Semantic, cross-browser, adaptive layout',
+        // img: "https://cdn-icons-png.flaticon.com/512/174/174854.png",
+        text: ' Основы разработки',
+        about: 'HTML, CSS, JavaScript',
       },
       {
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
-        text: 'CSS',
-        about: 'SCSS, BEM, animation, Tailwind',
+        // img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png",
+        text: 'Стилизация',
+        about: 'CSS, SCSS, BEM, animation, Tailwind',
       },
       {
-        img: require("../assets/img/js.png"),
-        text: 'JavaScript',
-        about: ' Fundamentals, algorithms and data structures, JS API browser',
+        // img: require("../assets/img/vue3.png"),
+        text: 'Фреймворки и библиотеки',
+        about: 'Vue (Options APi, Composition Api) Vuex, Router, i18n CLI , Vite, RESTfulAPI',
       },
       {
-        img: require("../assets/img/vue3.png"),
-        text: 'Vue',
-        about: 'Vue.js, Vue CLI, Vuex, Router, i18n',
-      },
-      {
-        img: require("../assets/img/git.png"),
-        text: 'GIT',
-        about: 'GitHub'
-      },
-      {
-        img: require("../assets/img/scss.png"),
-        text: 'VScode',
-        about: 'Figma, WordPress'
+        // img: require("../assets/img/git.png"),
+        text: 'Cистемы контроля версий',
+        about: 'GIT, GitHub'
       },
     ],
   };
@@ -75,19 +65,21 @@ section {
 padding-top: 80px;
 
 &__title {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
   font-size: 34px;
   display: flex;
   justify-content: center;
 }
 }
 .skills {
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
+  max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
     gap: 40px;
     justify-items: center;
 
     &__wrapper{
+        max-width: 205px;
         height: 200px;
         border-radius: 29px;
         background: #414141;
@@ -102,6 +94,11 @@ padding-top: 80px;
         &_img {
           width: 80px;
           height: 80px;
+        }
+
+        &_text {
+          font-size: 28px;
+          text-align: center;
         }
 
         &_about {

@@ -1,10 +1,12 @@
 <template>
-<headerComp />
-<homePage />
-<skillsComp />
-<aboutMe />
-<portfolioComp />
-<footerComp />
+  <div class="wrapperone">
+    <headerComp />
+    <homePage />
+    <skillsComp />
+    <aboutMe />
+    <portfolioComp />
+    <footerComp />
+  </div>
 </template>
 
 <script>
@@ -54,6 +56,9 @@ p {
   font-weight: 400;
   font-style: normal;
   font-family: "Caveat", cursive;
+}
+.wrapperone {
+  background: #2A2A2A
 }
 
 .center {

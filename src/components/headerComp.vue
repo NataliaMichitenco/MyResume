@@ -61,7 +61,7 @@
         <button class="header__nav-right_btn" @click="handleButtonClick">
           Ru
         </button>
-        <div class="header__toggle-switch" :class="{ active: isSwitchActive }">
+        <div @click="handleButtonClick" class="header__toggle-switch" :class="{ active: isSwitchActive }">
           <div class="header__toggle-switch--circle"></div>
         </div>
         <button class="header__nav-right_btn" @click="handleButtonClick">
@@ -115,7 +115,7 @@ export default {
 }
 
 header {
-  background: #414141;
+  background: #2A2A2A;
   font-family: "Caveat", cursive;
 }
 
@@ -141,31 +141,47 @@ header {
     justify-content: space-evenly;
     gap: 20px;
     align-items: center;
+    padding-right: 0;
 
     &_btn {
       height: 21px;
-      background: #414141;
+      background: #2A2A2A;
       color: #e4e4e4;
       cursor: pointer;
       border: none;
       font-family: "Caveat", cursive;
       font-size: 22px;
+      position: relative;
     }
 
-    &_btn:hover {
-      background: #e2a300;
-      color: #414141;
-      border: 1px solid #e2a300;
-      border-radius: 6px;
-      display: flex;
-      align-items: center;
-      font-size: 24px;
-      padding: 15px;
+    &_btn::after {
+      content: ''; /* Псевдоэлемент будет пустым */
+      position: absolute; /* Абсолютное позиционирование */
+      left: 0; /* Начинаем с левого края кнопки */
+      bottom: -4px; /* Размещаем подчеркивание внизу */
+      width: 100%; /* Ширина равна ширине кнопки */
+      height: 3px; /* Высота подчеркивания */
+      background-color:  #e2a300; /* Цвет подчеркивания */
+      transform: scaleX(0); /* Начальная масштабируемая ширина (ноль) */
+      transition: transform 0.3s ease; /* Плавный переход */
+      border-radius: 20px;
     }
+    &_btn:hover::after {
+      transform: scaleX(1); /* Увеличиваем до полной ширины при наведении */
+    }
+// }:hover {
+//       background: #e2a300;
+//       color: #414141;
+//       border: 1px solid #e2a300;
+//       border-radius: 6px;
+//       display: flex;
+//       align-items: center;
+//       padding: 15px;
+//     }
   }
   .header__toggle-switch {
-    height: 15px;
-    width: 31px;
+    height: 12px;
+    width: 23px;
     display: block;
     border: 1px solid #e2a300;
     z-index: 10;
@@ -184,8 +200,8 @@ header {
     position: absolute;
     right: 1px;
     top: 1px;
-    width: 11px;
-    height: 11px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: #e2a300;
     transition: 0.3s;
